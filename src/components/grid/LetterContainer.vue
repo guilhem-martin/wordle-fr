@@ -85,8 +85,8 @@ export default {
             border-color: #85C0F9
             background: #85C0F9
     &.incorrect
-        border-color: #3A3A3C
-        background: #3A3A3C
+        border-color: red
+        background: red
     &.no-animation
         transition: none
         animation: none
