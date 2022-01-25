@@ -1,9 +1,9 @@
 <template>
-    <div id="letter-container" :style="{ transitionDelay: !color ? '0s' : `${0.15 + 0.3 * (placement - 1)}s`, animationDelay: `${0.3 * (placement - 1)}s` }" :class="{ 
+    <div id="letter-container" :style="{ transitionDelay: !color ? '0s' : `${0.15 + 0.3 * (placement - 1)}s`, animationDelay: `${0.3 * (placement - 1)}s` }" :class="{
         'has-letter': letter,
-        validated: color, 
-        correct: color === 'correct', 
-        partial: color === 'partial', 
+        validated: color,
+        correct: color === 'correct',
+        partial: color === 'partial',
         incorrect: color === 'incorrect',
         'no-animation': !animate,
         'color-blind': colorBlindMode,
@@ -35,6 +35,7 @@ export default {
     border: 3px solid #2F2F2F
     border-radius: 6px
     box-sizing: border-box
+    box-shape: circle
     margin: 4px
     transition: transform 0.1s, background 0.1s, border 0.1s
     user-select: none
