@@ -33,9 +33,8 @@ export default {
     width: 62px
     height: 62px
     border: 3px solid #2F2F2F
-    border-radius: 6px
+    border-radius: 50%
     box-sizing: border-box
-    box-shape: circle
     margin: 4px
     transition: transform 0.1s, background 0.1s, border 0.1s
     user-select: none
